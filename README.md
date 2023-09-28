@@ -1,10 +1,68 @@
-# Snappy - Chat Application 
-Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
+# Messaging Service Prototype
+
+Welcome to the Messaging Service Prototype repository. This prototype includes essential messaging features and optional enhancements like an AI chatbot and video calling. It utilizes React for the frontend, Node.js with Express.js for the backend, MongoDB as the database, and integrates external APIs for messaging and video call services (ZegoChat) and an AI chatbot (GeekBot). The design emphasizes a clean and intuitive user interface.
+
+## Table of Contents
+- [Core Features](#core-features)
+- [Optional Features](#optional-features)
+- [Design](#design)
+- [Application Type](#application-type)
+- [Backend](#backend)
+  - [Database](#database)
+- [External APIs](#external-apis)
+- [Getting Started](#getting-started)
+
+## Core Features
+
+1. User Registration and Authentication
+   - Users can register for an account with a unique username and password.
+   - Authentication ensures secure access to the messaging service.
+
+2. Sending and Receiving Text Messages
+   - Users can send text messages to other registered users.
+   - Messages are delivered in real-time for a seamless chat experience.
+
+3. Group Chat Functionality
+   - Users can create and participate in group chats.
+   - Group chats allow multiple users to communicate in a single conversation.
+
+4. Real-time Message Updates
+   - Messages are updated in real-time, providing instant notifications of new messages.
+
+## Optional Features
+
+5. AI-Powered Chatbot
+   - Integration with GeekBot provides users with an AI chatbot for assistance and engagement.
+
+6. Video and Audio Calling
+   - Integration with ZegoChat allows users to initiate video and audio calls within the messaging app, enhancing communication options.
+
+## Design
+
+The user interface is designed to be clean and intuitive, ensuring a user-friendly experience. It follows modern design principles and may incorporate Atomic Design practices for component modularity and reusability.
+
+## Application Type
+
+This messaging service prototype can be implemented as a web application using React.js for the frontend. React's component-based architecture makes it suitable for building dynamic user interfaces.
+
+## Backend
+
+The backend is developed using Node.js with Express.js, following best practices for REST API development. This combination offers scalability and efficient handling of HTTP requests.
+
+### Database
+
+- MongoDB is chosen as the database, offering flexibility and scalability for storing user data, chat messages, and chat group information.
+
+## External APIs
+
+- ZegoChat: This external API is integrated to provide video and audio calling features within the messaging service, enhancing user communication options.
+
+- GeekBot: Integration with GeekBot provides users with an AI chatbot for automated responses and engagement.
+
 
 
 ![login page](./images/snappy_login.png)
 
-![home page](./images/snappy.png)
 
 ## Installation Guide
 
