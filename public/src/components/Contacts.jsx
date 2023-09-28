@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Logo from "../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
+import { BsRobot } from "react-icons/bs";
 
 export default function Contacts({ contacts, changeChat }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -17,13 +19,24 @@ export default function Contacts({ contacts, changeChat }) {
     setCurrentSelected(index);
     changeChat(contact);
   };
+  const navigate = useNavigate();
+  const chatty =() => {
+    navigate("/Bot");
+  };
+    
   return (
     <>
       {currentUserImage && currentUserImage && (
         <Container>
           <div className="brand">
             <img src={Logo} alt="logo" />
+            <div style={{display:'flex'}}>
             <h3>snappy</h3>
+            <button onClick={chatty}>
+            
+              <BsRobot/>
+            </button>
+            </div>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {

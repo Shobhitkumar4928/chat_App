@@ -1,11 +1,23 @@
 import React from "react";
+import {useState, useCallback} from "react";
 import { useNavigate } from "react-router-dom";
 import { BiPowerOff } from "react-icons/bi";
+import { BsFillCameraVideoFill } from "react-icons/bs";
 import styled from "styled-components";
 import axios from "axios";
 import { logoutRoute } from "../utils/APIRoutes";
+import { BsDisplay } from "react-icons/bs";
 export default function Logout() {
   const navigate = useNavigate();
+  const [roomID,setRoomID]= useState();
+
+  const handleVideoCallClick =() => {
+    navigate(`/call/${roomID}`);
+  };
+    
+ 
+
+
   const handleClick = async () => {
     const id = await JSON.parse(
       localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
@@ -17,9 +29,27 @@ export default function Logout() {
     }
   };
   return (
-    <Button onClick={handleClick}>
-      <BiPowerOff />
+    <>
+    <div style={{display:'flex'}}>
+      <div style={{ marginRight: '10px'}}>
+      <div className='App'>
+   <input placeholder="Enter Room ID" type='text' value={roomID} onChange={(e)=>setRoomID(e.target.value)} 
+   ></input>
+   <button onClick={handleVideoCallClick}>Join</button>
+</div>
+      </div>
+
+      <div>
+      <Button 
+       onClick={handleClick}>
+      <BiPowerOff /> 
     </Button>
+      </div>
+    </div>
+
+    </>
+
+    
   );
 }
 

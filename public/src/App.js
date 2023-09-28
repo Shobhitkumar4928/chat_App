@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SetAvatar from "./components/SetAvatar";
 import Chat from "./pages/Chat";
 import Login from "./pages/Login";
+import Call from "./pages/Call";
+import Bot from "./pages/Bot"
+
 import Register from "./pages/Register";
 export default function App() {
   return (
@@ -10,7 +13,9 @@ export default function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/call" element={<Call />} />
         <Route path="/setAvatar" element={<SetAvatar />} />
+        <Route path="/Bot" element={<Bot />} />
         <Route path="/" element={<Chat />} />
       </Routes>
     </BrowserRouter>
