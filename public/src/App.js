@@ -13,7 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/call" element={<Call />} />
+        <Route path="/call/:roomID" element={<Call />} />
         <Route path="/setAvatar" element={<SetAvatar />} />
         <Route path="/Bot" element={<Bot />} />
         <Route path="/" element={<Chat />} />
