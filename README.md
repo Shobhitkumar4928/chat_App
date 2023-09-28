@@ -1,3 +1,8 @@
+# Personal Details
+Hello Everyone!!
+My name is Shobhit Kumar. I am pre final year student at IIT(ISM)Dhanbad pursuing my bachelor of technology in Electronics and Communication Engineering.
+
+
 # Messaging Service Prototype
 
 Welcome to the Messaging Service Prototype repository. This prototype includes essential messaging features and optional enhancements like an AI chatbot and video calling. It utilizes React for the frontend, Node.js with Express.js for the backend, MongoDB as the database, and integrates external APIs for messaging and video call services (ZegoChat) and an AI chatbot (GeekBot). The design emphasizes a clean and intuitive user interface.
